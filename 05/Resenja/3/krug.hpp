@@ -2,14 +2,13 @@
 #define KRUG_DEF
 
 #include "elipsa.hpp"
-
-class Krug : public Elipsa {
-
+class Krug : public Elipsa{
     public:
-        Krug() : Elipsa(2,2) {}
-        Krug(double xx) : Elipsa(xx,xx) {}
-        Krug(const Krug& k) : Elipsa((Elipsa)k) {}
+    Krug() : Elipsa(1, 1) {}
+    Krug(double x) : Elipsa(x, x) {}
+    Krug(const Krug &k) : Elipsa(k.x, k.x) {}
 
+    double getO() { return 2 * x * MATH_PI; }
+    double getP() { return x * x * MATH_PI; }
 };
-
-#endif
+#endif // !KRUG_DEF
