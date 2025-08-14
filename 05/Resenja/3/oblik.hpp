@@ -14,7 +14,8 @@ class Oblik
     Oblik(double x) : a(x), b(x / 2) {}
     Oblik(const Oblik &o) : a(o.a), b(o.b) {}
 
-    
+    double getO() { return a.getO() + b.getO(); }
+    double getP() { return a.getP() - b.getP(); }
 };
 
 #endif
