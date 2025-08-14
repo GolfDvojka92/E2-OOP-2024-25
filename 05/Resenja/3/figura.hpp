@@ -6,11 +6,10 @@
 
 using namespace std;
 
-class Figura
-{
+class Figura {
     public:
-        virtual double getO() const = 0;
-        virtual double getP() const = 0;
+    virtual double getO() const = 0;
+    virtual double getP() const = 0;
 };
 
 #endif
