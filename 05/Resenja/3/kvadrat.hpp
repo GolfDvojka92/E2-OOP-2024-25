@@ -2,13 +2,13 @@
 #define KVADRAT_DEF
 
 #include "pravougaonik.hpp"
+class Kvadrat : public Pravougaonik {
+    public:
+    Kvadrat() : Pravougaonik(1,1) {}
+    Kvadrat(double a) : Pravougaonik(a,a) {}
+    Kvadrat(const Kvadrat &k) : Pravougaonik(k.a, k.b) {}
 
-class Kvadrat : public Pravougaonik
-{
-     public:
-        Kvadrat() : Pravougaonik(3,3) {}
-        Kvadrat(double aa) : Pravougaonik(aa,aa) {}
-        Kvadrat(const Kvadrat& k) : Pravougaonik((Pravougaonik)k) {}
+    double getO() { return 4 * a; }
+    double getP() { return a * a; }
 };
-
-#endif
+#endif // !KVADRAT_DEF

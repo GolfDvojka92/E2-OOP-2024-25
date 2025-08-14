@@ -2,7 +2,6 @@
 #define PRAVOUGAONIK_DEF
 
 #include "figura.hpp"
-#include <cmath>
 class Pravougaonik : public Figura {
     protected:
     double a, b;
