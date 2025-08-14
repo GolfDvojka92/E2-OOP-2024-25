@@ -8,8 +8,8 @@ using namespace std;
 
 class Figura {
     public:
-    virtual double getO() const = 0;
-    virtual double getP() const = 0;
+    virtual double getO() = 0;
+    virtual double getP() = 0;
 };
 
 #endif

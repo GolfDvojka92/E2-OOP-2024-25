@@ -7,24 +7,14 @@
 class Oblik
 {
     private:
-        Kvadrat A;
-        Krug B;
-
+    Kvadrat a;
+    Krug b;
     public:
-        Oblik() : A(6), B(3) {}
-        Oblik(double aa) : A(aa), B(aa / 2) {}         // poluprecnik kruga je polovina stranice kvadrata
-        Oblik(const Oblik& oblik) : A(oblik.A), B(oblik.B) {}
+    Oblik() : a(2), b(1) {}
+    Oblik(double x) : a(x), b(x / 2) {}
+    Oblik(const Oblik &o) : a(o.a), b(o.b) {}
 
-        double getP() const
-        {
-            return A.getP() - B.getP();
-        }
-
-        double getO() const
-        {
-            return B.getO() + A.getO();
-        }
-
+    
 };
 
 #endif
