@@ -1,52 +1,23 @@
 #ifndef ELIPSA_DEF
 #define ELIPSA_DEF
 
+#define MATH_PI 3.14
+
 #include "figura.hpp"
 
-class Elipsa : public Figura
-{
-    private:
-        double x,y;
-
+class Elipsa : public Figura {
+    protected:
+    double x, y;
     public:
-        Elipsa()
-        {
-            x = 2;
-            y = 4;
-        }
+    Elipsa() : x(1), y(1) {}
+    Elipsa(double xx, double yy) : x(xx), y(yy) {}
+    Elipsa(const Elipsa &e) : x(e.x), y(e.y) {}
+    
+    double getX() { return x; }
+    double getY() { return y; }
 
-        Elipsa(double aa, double bb)
-        {
-            x = aa;
-            y = bb;
-        }
-
-        Elipsa(const Elipsa& p)
-        {
-            x = p.x;
-            y = p.y;
-        }
-
-        double getX() const
-        {
-            return x;
-        }
-
-        double getY() const
-        {
-            return y;
-        }
-
-        double getO() const
-        {
-            return M_PI * (3 * (x + y) - sqrt((3 * x + y) * (x + 3 * y)));
-        }
-
-        double getP() const
-        {
-            return M_PI * x * y;
-        }
+    double getO() { return MATH_PI * (3 * (x + y) - sqrt((3 * x + y) * (x + 3 * y))); }
+    double getP() { return x * y * MATH_PI; }
 };
 
-#endif
-
+#endif // !ELIPSA_DEF

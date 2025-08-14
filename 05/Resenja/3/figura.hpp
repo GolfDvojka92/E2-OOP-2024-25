@@ -2,7 +2,7 @@
 #define FIGURA_DEF
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
