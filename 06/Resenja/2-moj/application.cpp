@@ -11,12 +11,10 @@ Application::Application(const Application &a) : language(a.language), sizeMB(a.
 Application::~Application() { appCount--; }
 
 ostream& operator<<(ostream& os, const Application &a) {
-    os << "----------Application----------" << endl;
     os << "\tlanguage:" << a.language << endl;
     os << "\tsize:" << a.sizeMB << endl;
     os << "\tauthor:" << a.author << endl;
     os << "\tappCount:" << a.appCount << endl;
-    os << "-------------------------------" << endl;
     return os;
 }
 

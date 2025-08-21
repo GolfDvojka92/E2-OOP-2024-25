@@ -12,7 +12,7 @@ class Computer {
 
     Computer();
     Computer(double, double, const char*, const char*);
-    Computer(Computer &c);
+    Computer(const Computer& c);
     friend ostream& operator<<(ostream&, const Computer&);
 };
 

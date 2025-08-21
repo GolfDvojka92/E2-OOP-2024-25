@@ -2,7 +2,6 @@
 #define ANDROIDAPP_DEF
 
 #include "application.hpp"
-#include <ostream>
 
 class AndroidApp : public Application{
     private:
@@ -14,6 +13,7 @@ class AndroidApp : public Application{
     AndroidApp(const AndroidApp&);
     ~AndroidApp();
     friend ostream& operator<<(ostream&, const AndroidApp&);
+    int getCount();
 };
 
 #endif // !ANDROIDAPP_DEF

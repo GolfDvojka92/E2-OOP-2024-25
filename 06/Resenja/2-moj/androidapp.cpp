@@ -1,5 +1,4 @@
 #include "androidapp.hpp"
-#include "application.hpp"
 
 int AndroidApp::androidCount = 0;
 
@@ -29,4 +28,8 @@ ostream& operator<<(ostream& os, const AndroidApp& a) {
     os << "Minimum SDK version: " << a.minVersion << endl;
     os << "Target SDK version: " << a.targetVersion << endl;
     return os;
+}
+
+int AndroidApp::getCount() {
+    return androidCount;
 }
