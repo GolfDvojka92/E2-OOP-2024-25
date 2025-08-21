@@ -16,6 +16,7 @@ ostream& operator<<(ostream& os, const Application &a) {
     os << "\tsize:" << a.sizeMB << endl;
     os << "\tauthor:" << a.author << endl;
     os << "\tappCount:" << a.appCount << endl;
+    os << "-------------------------------" << endl;
     return os;
 }
 
