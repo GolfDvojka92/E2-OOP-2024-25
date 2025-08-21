@@ -9,7 +9,6 @@ class Computer {
     double hddGB, ramGB;
     DinString gCard, os;
     public:
-
     Computer();
     Computer(double, double, const char*, const char*);
     Computer(const Computer& c);
