@@ -13,7 +13,7 @@ class AndroidApp : public Application{
     AndroidApp(double, double, double);
     AndroidApp(const AndroidApp&);
     ~AndroidApp();
-    friend ostream& operator<<(const ostream&, const AndroidApp&);
+    friend ostream& operator<<(ostream&, const AndroidApp&);
 };
 
 #endif // !ANDROIDAPP_DEF
