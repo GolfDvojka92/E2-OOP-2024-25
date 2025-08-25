@@ -2,7 +2,6 @@
 #define DIJAMANT_DEF
 
 #include <iostream>
-#include <ostream>
 
 class Dijamant {
     private:
@@ -19,4 +18,4 @@ class Dijamant {
     }
 };
 
-#endif // !DIJAMANT_
+#endif

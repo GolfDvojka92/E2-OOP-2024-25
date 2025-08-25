@@ -1,5 +1,5 @@
-#include <type_traits>
 #ifndef TREZOR_DEF
+#define TREZOR_DEF
 #include <iostream>
 
 using namespace std;
